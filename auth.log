@@ -1,0 +1,23 @@
+Nov 14 21:58:36 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Nov 14 21:58:36 kali sshd[119495]: Server listening on 0.0.0.0 port 22.
+Nov 14 21:58:36 kali sshd[119495]: Server listening on :: port 22.
+Nov 14 21:58:36 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Nov 14 22:03:37 kali sshd-session[121974]: Invalid user admin from 10.0.2.15 port 45088
+Nov 14 22:03:43 kali sshd-session[121974]: pam_unix(sshd:auth): check pass; user unknown
+Nov 14 22:03:43 kali sshd-session[121974]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15
+Nov 14 22:03:45 kali sshd-session[121974]: Failed password for invalid user admin from 10.0.2.15 port 45088 ssh2
+Nov 14 22:04:09 kali sshd-session[121974]: pam_unix(sshd:auth): check pass; user unknown
+Nov 14 22:04:11 kali sshd-session[121974]: Failed password for invalid user admin from 10.0.2.15 port 45088 ssh2
+Nov 14 22:04:17 kali sshd-session[121974]: pam_unix(sshd:auth): check pass; user unknown
+Nov 14 22:04:19 kali sshd-session[121974]: Failed password for invalid user admin from 10.0.2.15 port 45088 ssh2
+Nov 14 22:04:20 kali sshd-session[121974]: Connection closed by invalid user admin 10.0.2.15 port 45088 [preauth]
+Nov 14 22:04:20 kali sshd-session[121974]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15
+Nov 14 22:05:38 kali unix_chkpwd[123638]: password check failed for user (root)
+Nov 14 22:05:38 kali sshd-session[123538]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=root
+Nov 14 22:05:40 kali sshd-session[123538]: Failed password for root from 10.0.2.15 port 33774 ssh2
+Nov 14 22:06:06 kali unix_chkpwd[123868]: password check failed for user (root)
+Nov 14 22:06:08 kali sshd-session[123538]: Failed password for root from 10.0.2.15 port 33774 ssh2
+Nov 14 22:06:11 kali unix_chkpwd[123919]: password check failed for user (root)
+Nov 14 22:06:13 kali sshd-session[123538]: Failed password for root from 10.0.2.15 port 33774 ssh2
+Nov 14 22:06:14 kali sshd-session[123538]: Connection closed by authenticating user root 10.0.2.15 port 33774 [preauth]
+Nov 14 22:06:14 kali sshd-session[123538]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=root
